@@ -1,0 +1,737 @@
+<!DOCTYPE html>
+<html lang="pt-br">
+
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>50 anos - Procenge</title>
+    <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.2.0/dist/css/bootstrap.min.css" rel="stylesheet"
+        integrity="sha384-gH2yIJqKdNHPEq0n4Mqa/HGKIhSkIHeL5AyhkYV8i59U5AR6csBvApHHNl/vI1Bx" crossorigin="anonymous">
+
+
+    <style>
+        a {
+            text-decoration: none;
+        }
+        a:hover {
+            color: white;
+        }
+
+
+        nav {
+            display: flex;
+            justify-content: center;
+            align-items: center;
+            margin-top: 40px;
+        }
+
+        body {
+            background-image: url('https://i.ibb.co/QJtpPMc/50anos-BG2.pnghttps://i.ibb.co/QJtpPMc/50anos-BG2.png');
+            background-repeat: no-repeat;
+            background-attachment: fixed;
+            background-size: cover;
+        }
+
+        .logo {
+            width: 150px;
+        }
+
+        nav a {
+            margin-left: 32px;
+            margin-right: 32px;
+            color: white;
+        }
+
+        .alinha-navbar {
+            display: flex;
+            align-items: center;
+            justify-content: center;
+        }
+
+        .navbar-nav {
+            align-items: center;
+        }
+
+        .btn-principal {
+            border: none;
+            background-color: #E7A12D;
+            border-radius: 50px;
+            width: 200px;
+            height: fit-content;
+            padding-top: 10px;
+            padding-bottom: 10px;
+            color: black;
+        }
+        
+        .btn-primary:hover{
+            background-color: #e89c24;
+            color: black;
+        }
+        .btn-primary:focus{
+            background-color: #E7A12D;
+            color: black;
+        }
+
+        .hero {
+            width: 100%;
+            height: 80vh;
+            display: flex;
+            align-items: center;
+            justify-content: center;
+        }
+
+        .hero-subitem {
+            display: flex;
+            align-items: center;
+            justify-content: center;
+        }
+
+        .box-1 {
+            width: 50%;
+        }
+
+        .box-2 {
+            width: 50%;
+        }
+
+        .texto-principal {
+            color: white;
+        }
+
+        .mote {
+            color: white;
+            font-size: 20px;
+            margin-bottom: 20px;
+        }
+
+        .box-botoes {
+            display: flex;
+            margin-bottom: 28px;
+        }
+
+        .btn-plus {
+            border: solid 1px white;
+            background-color: transparent;
+            height: fit-content;
+            width: fit-content;
+            color: white;
+            border-radius: 40px;
+            padding-right: 40px;
+            padding-left: 40px;
+            padding-top: 10px;
+            padding-bottom: 10px;
+            margin-left: 20px;
+        }
+
+
+        .texto-secundario {
+            color: white;
+            max-width: 100%;
+            margin-top: 16px;
+        }
+
+        .box-sessoes {
+            display: flex;
+            justify-content: space-around;
+            align-items: center;
+        }
+
+        .subitem-sessoes {
+            width: 50%;
+            display: flex;
+            flex-direction: column;
+            justify-content: space-between;
+            align-items: flex-start;
+            margin: 0 80px 0 80px;
+        }
+
+        .subitem-sessoes2 {
+            width: 50%;
+            display: flex;
+            justify-content: center;
+            align-items: center;
+            margin: 0 80px 0 80px;
+        }
+
+        .container-sessoes {
+            display: flex;
+            justify-content: center;
+            align-items: center;
+            margin-top: 40px;
+        }
+
+        .alinha-titulos {
+            display: flex;
+            flex-direction: column;
+            justify-content: center;
+            align-items: center;
+        }
+
+        .alinha-titulos h1 {
+            color: white;
+        }
+
+        .nome-diferente {
+            color: #E7A12D;
+        }
+
+        .nome-diferente2 {
+            color: white;
+        }
+
+        .box-depoimentos1 {
+            width: 33.33%;
+            height: 300px;
+            background-color: #1A202C;
+            margin: 40px;
+            padding: 20px;
+            display: flex;
+            flex-direction: column;
+            justify-content: center;
+            border-radius: 10px;
+
+        }
+
+        .box-depoimentos2 {
+            width: 33.33%;
+            height: 300px;
+            background-color: #1A202C;
+            margin: 40px;
+            padding: 20px;
+            display: flex;
+            flex-direction: column;
+            justify-content: center;
+            align-items: center;
+            border-radius: 10px;
+        }
+
+        .box-depoimentos3 {
+            width: 33.33%;
+            height: 300px;
+            background-color: #1A202C;
+            margin: 40px;
+            padding: 20px;
+            display: flex;
+            flex-direction: column;
+            justify-content: center;
+            align-items: center;
+            border-radius: 10px;
+        }
+
+        .container-depoimentos {
+            display: flex;
+        }
+
+        .alinha-depoimentos {
+            display: flex;
+        }
+
+        .depoimentos-text-1 {
+            color: white;
+        }
+
+        .depoimentos-text-2 {
+            color: white;
+            font-weight: 700;
+            margin-bottom: 0;
+        }
+
+        .alinha-nome-pessoa {
+            display: flex;
+            flex-direction: column;
+            margin-left: 20px;
+        }
+
+        .depoimentos-text-3 {
+            color: white;
+            margin-top: 0;
+        }
+
+        .area-de-cadastro {
+            width: 100%;
+            height: 100px;
+            background-color: #1A202C;
+            display: flex;
+            flex-direction: column;
+            align-items: center;
+            justify-content: center;
+            margin-top: 80px;
+
+        }
+
+        .ajuste-img img {
+            max-width: 300px;
+        }
+
+        .alinha-footer {
+            display: flex;
+            align-items: center;
+            justify-content: center;
+            gap: 40px;
+            height: 300px;
+        }
+
+        .ajusta-texto-footer {
+            color: white;
+        }
+
+        .ajusta-icones-sociais {
+            display: flex;
+            gap: 20px;
+            align-items: center;
+            justify-content: center;
+        }
+        .carousel-control-next-icon{
+            color: white;
+        }
+
+        .carousel-control-next, .carousel-control-prev{
+         width: 5%;
+        }
+
+        .carousel-indicators{
+            margin-bottom: 0;
+        }
+
+      
+
+        @media screen and (max-width: 800px) {
+
+            .hero {
+                flex-direction: column;
+                height: 50%;
+                margin-top: 40px;
+                height: fit-content;
+            }
+
+            .hero-subitem {
+                flex-direction: column;
+            }
+
+            .box-2 {
+                width: 100%;
+            }
+
+            .btn-principal {
+                padding-left: 20px;
+                padding-right: 20px;
+                border-radius: 20px;
+            }
+
+            .box-sessoes {
+                flex-direction: column;
+                width: 100%;
+            }
+
+            .texto-principal {
+                align-self: center;
+            }
+
+            .texto-secundario {
+                text-align: center;
+
+            }
+
+            .btn-principal {
+                align-self: center;
+            }
+
+            .container-depoimentos {
+                display: flex;
+                flex-direction: column;
+            }
+
+            .box-depoimentos1 {
+                width: 100%;
+                margin-left: 0;
+                margin-right: 0;
+            }
+
+            .box-depoimentos2 {
+                display: none;
+            }
+
+            .box-depoimentos3 {
+                display: none;
+            }
+
+            .hero-subitem {
+                width: 100%;
+
+            }
+
+            .alinha-titulos {
+                width: 100%;
+                display: flex;
+                flex-direction: column;
+                align-items: center;
+                justify-content: center;
+                text-align: center;
+                align-self: center;
+            }
+
+            .box-2 {
+                display: none;
+            }
+
+            .alinha-footer {
+                flex-direction: column;
+                width: 100%;
+                height: fit-content;
+                margin-top: 40px;
+                margin-bottom: 40px;
+            }
+
+            .ajusta-texto-footer {
+                text-align: center;
+            }
+
+            .area-de-cadastro {
+                width: 100%;
+                margin-top: 20px;
+
+            }
+
+            .btn-plus {
+                padding-right: 16px;
+                padding-left: 16px;
+                border-radius: 5px;
+            }
+
+            .subitem-sessoes2 {
+                width: 100%;
+                padding: 40px;
+            }
+            .carousel-control-next, .carousel-control-prev{
+                width: 15%;
+            }
+
+            .carousel-indicators{
+                margin-bottom: 10px;
+            }
+
+        }
+    </style>
+
+</head>
+
+<body>
+
+    <div class="alinha-navbar">
+        <nav class="navbar navbar-expand-lg navbar-dark">
+            <div class="container-fluid">
+                <img class="navbar-brand logo"
+                    src="https://www.imagemhost.com.br/images/2022/08/15/logobranca_procenge.png" alt="Logo Procenge">
+                <button class="navbar-toggler" type="button" data-bs-toggle="collapse" data-bs-target="#navbarNav"
+                    aria-controls="navbarNav" aria-expanded="false" aria-label="Toggle navigation">
+                    <span class="navbar-toggler-icon"></span>
+                </button>
+                <div class="collapse navbar-collapse" id="navbarNav">
+                    <ul class="navbar-nav">
+                        <li class="nav-item">
+                            <a class="nav-link active" aria-current="page" href="#apresentacao">Apresentação</a>
+                        </li>
+                        <li class="nav-item">
+                            <a class="nav-link" href="#livro">Livro</a>
+                        </li>
+                        <li class="nav-item">
+                            <a class="nav-link" href="#podcast">Podcast</a>
+                        </li>
+                        <li class="nav-item">
+                            <a class="nav-link" href="#depoimentos">Depoimentos</a>
+                        </li>
+                        <li class="nav-item">
+                            <a class="nav-link" href="#sobre">Sobre</a>
+                        </li>
+                        <li class="nav-item">
+                            <a href="https://promo.procenge.com.br/depoimentos-procenge-50anos" target="_blank" class="btn btn-primary btn-principal">Envie seu depoimento</a>
+                        </li>
+
+                    </ul>
+                </div>
+            </div>
+    </div>
+
+    </nav>
+
+    <section class="hero">
+
+        <div class="hero-subitem">
+            <div class="box-1">
+                <h1 class="texto-principal">Procenge 50 anos</h1>
+                <p class="mote">Tecnologia que movimenta futuros</p>
+                <div class="box-botoes">
+                    <a href="https://promo.procenge.com.br/depoimentos-procenge-50anos" target="_blank" class="btn-principal btn btn-primary">Envie seu depoimento</a>
+                    <a href="https://procenge.com.br/" target="_blank" class="btn-plus">Saiba mais</a>
+                </div>
+                <img src="https://www.imagemhost.com.br/images/2022/08/15/icone.png" alt="Ícone apontando para baixo">
+            </div>
+
+            <div class="box-2">
+                <img src="https://www.imagemhost.com.br/images/2022/08/15/Selo.png" alt="Selo dos 50 anos da Procenge">
+            </div>
+        </div>
+
+    </section>
+
+    <div class="container-sessoes mt-5">
+        <section class="box-sessoes">
+            <div class="subitem-sessoes">
+                <h1 id="apresentacao" class="texto-principal">Apresentação</h1>
+                <p class="texto-secundario">Nossa celebração de 50 anos não corresponde apenas a um marco temporal. São
+                    ciclos, pessoas e momentos marcados por décadas de eficiência e transformação.
+
+                    <br><br> No decorrer de todos esses anos, a Procenge conta histórias por meio da tecnologia,
+                    oferecendo aos nossos clientes soluções que impulsionam seus resultados, acompanhando o
+                    desenvolvimento de cada um e crescendo junto com eles.
+
+                    <br><br>Toda nossa trajetória não compreende somente esses quase 20 mil dias de história, somos o
+                    futuro em movimento, presente em incontáveis projetos que impactam a vida de milhares de
+                    brasileiros. Vem com a gente celebrar nossa evolução e o futuro que seguimos escrevendo. </p>
+            </div>
+            <div class="subitem-sessoes2">
+                <iframe width="560" height="315" src="https://www.youtube.com/embed/d607xQ2AWSA?start=1"
+                    title="YouTube video player" frameborder="0"
+                    allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture"
+                    allowfullscreen></iframe>
+            </div>
+        </section>
+    </div>
+
+
+    <div class="container-sessoes mt-5">
+        <section class="box-sessoes">
+
+            <div class="subitem-sessoes2">
+                <img src="https://www.imagemhost.com.br/images/2022/08/16/Book_Cover_Mockup-2.png"
+                    alt="Livro Procenge">
+            </div>
+
+            <div class="subitem-sessoes">
+                <h1 id="livro" class="texto-principal">Livro Digital</h1>
+                <p class="texto-secundario">Nascida em um contexto de efervescentes acontecimentos históricos e
+                    tecnológicos, a Procenge surge de um sonho de alguns empreendedores que acreditavam no poder da
+                    tecnologia e da inovação.
+
+                    <br><br> Essa é a jornada que Ronaldo Carneiro Leão, escritor e ex-colaborador da Procenge, nos
+                    propõe embarcar para conhecer a relevância da empresa que participou de marcos importantes das
+                    evoluções tecnológicas no Brasil e que segue se reinventando para permanecer atuante na construção
+                    do futuro.
+
+                    <br><br>O livro “Procenge 50 anos” nos convoca a mergulhar nessa instigante história e entender como
+                    a Procenge movimenta o futuro que permeia nosso presente e desenvolve o que ainda está por vir. </p>
+                <a href="https://procenge.com.br/" target="_blank" class="btn btn-primary btn-principal mt-3">Baixe agora!</a>
+            </div>
+
+        </section>
+    </div>
+
+    <div class="container-sessoes mt-5 mb-5">
+        <section class="box-sessoes">
+            <div class="subitem-sessoes">
+                <h1 id="podcast" class="texto-principal">Podcast</h1>
+                <p class="texto-secundario">A Série de episódios em comemoração aos 50 anos da Procenge é um bate papo
+                    sobre a história da empresa, sua relevância no mercado tecnológico e o papel que desempenha no
+                    desenvolvimento de soluções eficientes para o futuro.
+
+                    <br><br>Passeando por diversas áreas da corporação, de forma leve e dinâmica, cada episódio é um
+                    convite para conhecer uma das empresas pioneiras do Porto Digital, além de acompanhar os desafios e
+                    conquistas ao longo de 5 décadas de história. </p>
+            </div>
+            <div class="subitem-sessoes2">
+                <iframe class="ajusta-podcast" style="border-radius:12px"
+                    src="https://open.spotify.com/embed/episode/7lL6AzsPc5TfxZloWxv5JO?utm_source=generator&theme=0"
+                    width="100%" height="232" frameBorder="0" allowfullscreen=""
+                    allow="autoplay; clipboard-write; encrypted-media; fullscreen; picture-in-picture"></iframe>
+            </div>
+        </section>
+    </div>
+
+    <section>
+        <div id="depoimentos" class="alinha-titulos">
+            <p class="nome-diferente">Procenge 50 anos</p>
+            <h1>Pessoas que mudam o futuro</h1>
+            <p class="nome-diferente2">Confira alguns depoimentos dos procengers que transformam a tecnologia do futuro
+            </p>
+        </div>
+
+        <div id="carouselExampleDark" class="carousel carousel-light slide" data-bs-ride="carousel">
+            <div class="carousel-indicators">
+              <button type="button" data-bs-target="#carouselExampleDark" data-bs-slide-to="0" class="active" aria-current="true" aria-label="Slide 1"></button>
+              <button type="button" data-bs-target="#carouselExampleDark" data-bs-slide-to="1" aria-label="Slide 2"></button>
+            </div>
+            <div class="carousel-inner">
+              <div class="carousel-item active" data-bs-interval="100000">
+                <div class="container-depoimentos">
+                    <div class="box-depoimentos1">
+                        <p class="depoimentos-text-1">Its just 1 month since Im using Spend.In to manage my business expenses,
+                            but the result is very satisfying! My business finance now more neat than before, thanks to
+                            Spend.In!</p>
+                        <div>
+                            <div class="alinha-depoimentos">
+                                <div><img src="https://www.imagemhost.com.br/images/2022/08/16/Foto1.png" alt="Foto de pessoa">
+                                </div>
+                                <div class="alinha-nome-pessoa">
+                                    <p class="depoimentos-text-2">Jimmy Bartney</p>
+                                    <p class="depoimentos-text-3">Product manager</p>
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+        
+                    <div class="box-depoimentos2">
+                        <div>
+                            <p class="depoimentos-text-1">Its just 1 month since Im using Spend.In to manage my business
+                                expenses, but the result is very satisfying! My business finance now more neat than before,
+                                thanks to Spend.In!</p>
+                            <div>
+                                <div class="alinha-depoimentos">
+                                    <div><img src="https://www.imagemhost.com.br/images/2022/08/16/Foto2.png"
+                                            alt="Foto de pessoa"></div>
+                                    <div class="alinha-nome-pessoa">
+                                        <p class="depoimentos-text-2">Jimmy Bartney</p>
+                                        <p class="depoimentos-text-3">Product manager</p>
+                                    </div>
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+        
+                    <div class="box-depoimentos3">
+                        <div>
+                            <p class="depoimentos-text-1">Its just 1 month since Im using Spend.In to manage my business
+                                expenses, but the result is very satisfying! My business finance now more neat than before,
+                                thanks to Spend.In!</p>
+                            <div>
+                                <div class="alinha-depoimentos">
+                                    <div><img src="https://www.imagemhost.com.br/images/2022/08/16/Foto3.png"
+                                            alt="Foto de pessoa"></div>
+                                    <div class="alinha-nome-pessoa">
+                                        <p class="depoimentos-text-2">Julia</p>
+                                        <p class="depoimentos-text-3">Product manager</p>
+                                    </div>
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+              </div>
+              <div class="carousel-item" data-bs-interval="20000">
+                <div class="container-depoimentos">
+                    <div class="box-depoimentos1">
+                        <p class="depoimentos-text-1">Its just 1 month since Im using Spend.In to manage my business expenses,
+                            but the result is very satisfying! My business finance now more neat than before, thanks to
+                            Spend.In!</p>
+                        <div>
+                            <div class="alinha-depoimentos">
+                                <div><img src="https://www.imagemhost.com.br/images/2022/08/16/Foto1.png" alt="Foto de pessoa">
+                                </div>
+                                <div class="alinha-nome-pessoa">
+                                    <p class="depoimentos-text-2">Melissa</p>
+                                    <p class="depoimentos-text-3">Product manager</p>
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+        
+                    <div class="box-depoimentos2">
+                        <div>
+                            <p class="depoimentos-text-1">Its just 1 month since Im using Spend.In to manage my business
+                                expenses, but the result is very satisfying! My business finance now more neat than before,
+                                thanks to Spend.In!</p>
+                            <div>
+                                <div class="alinha-depoimentos">
+                                    <div><img src="https://www.imagemhost.com.br/images/2022/08/16/Foto2.png"
+                                            alt="Foto de pessoa"></div>
+                                    <div class="alinha-nome-pessoa">
+                                        <p class="depoimentos-text-2">Lucas</p>
+                                        <p class="depoimentos-text-3">Product manager</p>
+                                    </div>
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+        
+                    <div class="box-depoimentos3">
+                        <div>
+                            <p class="depoimentos-text-1">Its just 1 month since Im using Spend.In to manage my business
+                                expenses, but the result is very satisfying! My business finance now more neat than before,
+                                thanks to Spend.In!</p>
+                            <div>
+                                <div class="alinha-depoimentos">
+                                    <div><img src="https://www.imagemhost.com.br/images/2022/08/16/Foto3.png"
+                                            alt="Foto de pessoa"></div>
+                                    <div class="alinha-nome-pessoa">
+                                        <p class="depoimentos-text-2">Jimmy Bartney</p>
+                                        <p class="depoimentos-text-3">Product manager</p>
+                                    </div>
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+              </div>
+            </div>
+            <button class="carousel-control-prev" type="button" data-bs-target="#carouselExampleDark" data-bs-slide="prev">
+              <span class="carousel-control-prev-icon" aria-hidden="true"></span>
+              <span class="visually-hidden">Previous</span>
+            </button>
+            <button class="carousel-control-next" type="button" data-bs-target="#carouselExampleDark" data-bs-slide="next">
+              <span class="carousel-control-next-icon" aria-hidden="true"></span>
+              <span class="visually-hidden">Next</span>
+            </button>
+          </div>
+
+    </section>
+
+    <section>
+        <div class="area-de-cadastro">
+            <a href="https://promo.procenge.com.br/depoimentos-procenge-50anos" target="_blank" class="btn btn-primary btn-principal">Envie seu depoimento</a>
+        </div>
+    </section>
+
+    <section id="sobre" class="alinha-footer">
+        <div class="ajuste-img">
+            <img src="https://www.imagemhost.com.br/images/2022/08/16/NEW_Selo50anos_horizontal_12x.png"
+                alt="logo da Procenge">
+        </div>
+
+        <div class="ajusta-texto-footer">
+            <p>Avenida Rio Branco , 139 - 3º andar
+                <br> Bairro do Recife, PE - CEP: 50.030-310 CNPJ: 09.831.033/0001-58
+                <br> Tel: (81) 4009 2877</p>
+        </div>
+
+        <div>
+            <section class="ajusta-icones-sociais">
+
+                <a href="https://www.instagram.com/procenge/" target="_blank">
+                    <img src="https://www.imagemhost.com.br/images/2022/08/16/instagram.png" alt="Logo Instagram">
+                </a>
+                <a href="https://www.facebook.com/Procenge/" target="_blank">
+                    <img src="https://www.imagemhost.com.br/images/2022/08/16/facebook.png" alt="Logo Facebook">
+                </a>
+                <a href="https://www.linkedin.com/company/procenge" target="_blank">
+                    <img src="https://www.imagemhost.com.br/images/2022/08/16/Linkedin.png" alt="Logo Linkedin">
+                </a>
+                <a href="https://www.youtube.com/c/Procenge360" target="_blank">
+                    <img src="https://www.imagemhost.com.br/images/2022/08/16/Youtube.png" alt="Logo Youtube">
+                </a>
+            </section>
+            <div>
+                <p class="ajusta-texto-footer mt-3">© 2022 Todos os direitos reservados
+                    <br> Procenge Ltda.</p>
+            </div>
+        </div>
+    </section>
+
+    <script src="https://cdn.jsdelivr.net/npm/@popperjs/core@2.11.5/dist/umd/popper.min.js"
+        integrity="sha384-Xe+8cL9oJa6tN/veChSP7q+mnSPaj5Bcu9mPX5F5xIGE0DVittaqT5lorf0EI7Vk" crossorigin="anonymous">
+    </script>
+    <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.2.0/dist/js/bootstrap.min.js"
+        integrity="sha384-ODmDIVzN+pFdexxHEHFBQH3/9/vQ9uori45z4JjnFsRydbmQbmL5t1tQ0culUzyK" crossorigin="anonymous">
+    </script>
+</body>
+
+</html>
