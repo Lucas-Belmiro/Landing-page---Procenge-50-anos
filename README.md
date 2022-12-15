@@ -6,7 +6,7 @@
 
 ``` Git/GitHub, HTML5, JavaScript, CSS, Bootstrap  ```
 
-Veja a página publicada em: https://lucas-belmiro.github.io/Landing-page---Procenge-50-anos/
+Veja a página publicada em: https://landing-page-procenge-50-anos.vercel.app/
 
 # #
 ![preview](https://i.ibb.co/Q6DKfZ7/mockup-site-Procenge.jpg)
